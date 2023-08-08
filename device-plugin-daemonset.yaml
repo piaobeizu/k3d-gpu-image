@@ -29,7 +29,7 @@ spec:
         name: nvidia-device-plugin-ds
     spec:
       nodeSelector: 
-        kubernetes.io/hostname: k3d-dexforce-dexverse-agent-0
+        kubernetes.io/hostname: k3d-agent-0 # 必须和k3d集群中的节点名称一致
       tolerations:
       - key: nvidia.com/gpu
         operator: Exists
